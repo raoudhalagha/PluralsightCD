@@ -8,5 +8,8 @@ namespace MyCoolComponent
 {
     public class Class1
     {
+        //some minor changes, that is compatible
+
+        // some addional change
     }
 }
