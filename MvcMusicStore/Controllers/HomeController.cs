@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System;
+using MvcMusicStore.Featuretoggles;
 
 namespace MvcMusicStore.Controllers
 {
@@ -23,6 +24,20 @@ namespace MvcMusicStore.Controllers
             //var customerCountry = GetCountryFromClient(Request.UserHostAddress);
             //ViewBag.CustomerCountry = customerCountry;
             return View(albums);
+        }
+
+        public ActionResult TurnFeatureOn()
+        {
+            if (HomePagefeatureToggle.Current.FeatureEnabled)
+            {
+                HomePagefeatureToggle.Current.TurnOff();
+            }
+            else
+            {
+                HomePagefeatureToggle.Current.TurnOn();
+            }
+
+            return RedirectToAction("Index");
         }
 
         private List<Album> GetTopSellingAlbums(int count)
