@@ -5,6 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{0DD8FF71-2DD3-407F-9BD5-DB7F86600E87}"
 	ProjectSection(SolutionItems) = preProject
+		CaptureVideo.testsettings = CaptureVideo.testsettings
 		LoadtestSettings.testsettings = LoadtestSettings.testsettings
 	EndProjectSection
 EndProject
