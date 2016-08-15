@@ -25,6 +25,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xunit.Tests", "Xunit.Tests\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MsTest.Tests", "MsTest.Tests\MsTest.Tests.csproj", "{DA33ED13-ED2C-433F-A0C9-05D57E717C36}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedUI.Test", "CodedUI.Test\CodedUI.Test.csproj", "{34742FF2-4652-45D7-BE1A-F70004409ABE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.Tests", "Selenium.Tests\Selenium.Tests.csproj", "{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -51,6 +55,14 @@ Global
 		{DA33ED13-ED2C-433F-A0C9-05D57E717C36}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA33ED13-ED2C-433F-A0C9-05D57E717C36}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA33ED13-ED2C-433F-A0C9-05D57E717C36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{34742FF2-4652-45D7-BE1A-F70004409ABE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{34742FF2-4652-45D7-BE1A-F70004409ABE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{34742FF2-4652-45D7-BE1A-F70004409ABE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{34742FF2-4652-45D7-BE1A-F70004409ABE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
