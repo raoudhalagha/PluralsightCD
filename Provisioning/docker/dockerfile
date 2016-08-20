@@ -1,0 +1,7 @@
+from marcelv/pluralsightcourse2
+RUN mkdir c:\MvcMusicstore
+WORKDIR /MvcMusicStore
+ADD MvcMusicstore.zip  /MvcMusicStore/MvcMusicStore.zip
+ADD MvcMusicStore.deploy.cmd /MvcMusicStore/MvcMusicStore.deploy.cmd
+ADD MvcMusicStore.SetParameters.xml /MvcMusicStore/MvcMusicStore.SetParameters.xml
+RUN MvcMusicStore.deploy.cmd, /Y
