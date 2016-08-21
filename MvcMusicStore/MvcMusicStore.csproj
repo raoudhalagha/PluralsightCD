@@ -199,7 +199,6 @@
     <Compile Include="ViewModels\ShoppingCartViewModel.cs" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="App_Data\MvcMusicStore.sdf" />
     <Content Include="Content\Images\home-showcase.png" />
     <Content Include="Content\Images\logo.png" />
     <Content Include="Content\Images\placeholder.gif" />
@@ -378,6 +377,9 @@
     <None Include="Properties\PublishProfiles\marcelv %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\marcelv.pubxml" />
     <None Include="Properties\PublishProfiles\TechdaysMarcelv.pubxml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
