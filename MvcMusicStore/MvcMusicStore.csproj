@@ -34,7 +34,7 @@
     <RestorePackages>true</RestorePackages>
     <NuGetPackageImportStamp>
     </NuGetPackageImportStamp>
-    <ApplicationInsightsResourceId>/subscriptions/200d83c6-1818-4a1d-a5b8-3c72708161a3/resourcegroups/Default-Web-NorthEurope/providers/microsoft.insights/components/MvcMusicStore</ApplicationInsightsResourceId>
+    <ApplicationInsightsResourceId>/subscriptions/751c0e95-94a3-4b86-8ecf-3fbe3847c0c5/resourcegroups/CDCourse/providers/microsoft.insights/components/MvcMusicStore</ApplicationInsightsResourceId>
     <TargetFrameworkProfile />
     <UseGlobalApplicationHostFile />
   </PropertyGroup>
