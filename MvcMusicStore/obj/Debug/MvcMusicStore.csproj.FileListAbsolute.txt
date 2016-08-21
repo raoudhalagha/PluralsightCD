@@ -148,5 +148,4 @@ C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.
 C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.csprojResolveAssemblyReference.cache
 C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.dll
 C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\obj\Debug\MvcMusicStore.pdb
-C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\bin\Microsoft.ApplicationInsights.TraceListener.dll
-C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\bin\Microsoft.ApplicationInsights.TraceListener.xml
+C:\Users\Build\Source\Repos\MVCMusicStore\MvcMusicStore\bin\ApplicationInsights.config
