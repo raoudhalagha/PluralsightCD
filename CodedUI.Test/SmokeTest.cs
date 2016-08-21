@@ -18,7 +18,7 @@ namespace UITests
     [CodedUITest]
     public class SmokeTest
     {
-        const string _homePageUrl = "http://localhost:26641/";
+        const string _homePageUrl = "http://52.174.156.60/mvcmusicstore_deploy/";
         public SmokeTest()
         {
         }
