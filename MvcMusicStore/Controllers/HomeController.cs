@@ -26,19 +26,7 @@ namespace MvcMusicStore.Controllers
             return View(albums);
         }
 
-        public ActionResult TurnFeatureOn()
-        {
-            if (HomePagefeatureToggle.Current.FeatureEnabled)
-            {
-                HomePagefeatureToggle.Current.TurnOff();
-            }
-            else
-            {
-                HomePagefeatureToggle.Current.TurnOn();
-            }
-
-            return RedirectToAction("Index");
-        }
+       
 
         private List<Album> GetTopSellingAlbums(int count)
         {

@@ -208,6 +208,7 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountController.cs" />
     <Compile Include="Controllers\CheckoutController.cs" />
+    <Compile Include="Controllers\FeatureToglesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\ShoppingCartController.cs" />
     <Compile Include="Controllers\StoreController.cs" />
@@ -296,6 +297,10 @@
     <Content Include="ApplicationInsights.config" />
     <None Include="Properties\PublishProfiles\Devintersection.pubxml" />
     <None Include="Properties\PublishProfiles\DevintersectionDemo.pubxml" />
+    <None Include="Scripts\jquery-1.10.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.10.2.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.js" />
+    <Content Include="Scripts\jquery-1.10.2.min.map" />
     <None Include="Scripts\jquery-2.1.3.intellisense.js" />
     <None Include="Scripts\jquery-3.1.0.intellisense.js" />
     <Content Include="README.jQuery.vsdoc.txt" />
@@ -339,6 +344,11 @@
     <Content Include="Scripts\jquery-3.1.0.min.map" />
     <Content Include="_EventRegisterUsersGuide.docx" />
     <Content Include="_EventSourceUsersGuide.docx" />
+    <Content Include="Views\FeatureToggles\Create.cshtml" />
+    <Content Include="Views\FeatureToggles\Delete.cshtml" />
+    <Content Include="Views\FeatureToggles\Details.cshtml" />
+    <Content Include="Views\FeatureToggles\Edit.cshtml" />
+    <Content Include="Views\FeatureToggles\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Store\Details.cshtml" />
