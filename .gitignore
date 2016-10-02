@@ -257,3 +257,4 @@ paket-files/
 
 
 /packages/GitVersionTask.3.6.2
+*.webtestresult
