@@ -33,6 +33,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CodedUI.Test", "CodedUI.Tes
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Selenium.Tests", "Selenium.Tests\Selenium.Tests.csproj", "{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LoadAndPerformanceTests", "LoadAndPerformanceTests\LoadAndPerformanceTests.csproj", "{11285277-CF22-4C44-8DA4-C308E71EC47B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -67,6 +69,10 @@ Global
 		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4A566824-2E60-4B10-8DC6-49BDC0C0EFF2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11285277-CF22-4C44-8DA4-C308E71EC47B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11285277-CF22-4C44-8DA4-C308E71EC47B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11285277-CF22-4C44-8DA4-C308E71EC47B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11285277-CF22-4C44-8DA4-C308E71EC47B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
