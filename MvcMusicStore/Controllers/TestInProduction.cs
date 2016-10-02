@@ -10,7 +10,7 @@ namespace MvcMusicStore
     {
         private RerouteChangeRequest _latestCall;
 
-        public IEnumerable<string> Index()
+        public string Index()
         {
             var metrics = new List<string>();
             if (_latestCall != null)
@@ -19,11 +19,11 @@ namespace MvcMusicStore
                 {
                     metrics.Add(metric.Key + ":" + metric.Value);
                 }
-                return metrics.ToArray();
+                return string.Join("\n",metrics.ToArray());
             }
             else
             {
-                return new string[] { "No Callback yet" };
+                return  "No Callback yet" ;
             }
         }
 
