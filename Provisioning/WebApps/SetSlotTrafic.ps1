@@ -9,4 +9,10 @@ $rule = New-Object Microsoft.WindowsAzure.Commands.Utilities.Websites.Services.W
 $rule.ActionHostName = "$webAppName-$canarySlotName.azurewebsites.net"
 $rule.ReroutePercentage = $percentage
 $rule.Name = $canarySlotName
+$rule.ChangeIntervalInMinutes = 10;
+$rule.ChangeStep = 5;
+$rule.MinReroutePercentage = 1;
+$rule.MaxReroutePercentage = 80;
+$rule.ChangeDecisionCallbackUrl = "http://mvcmusicstoretechdays.azurewebsites.net/TestInProduction/GetRoutingDirection"
+
 Set-AzureWebsite $webAppName -Slot $productionSlotName -RoutingRules $rule
