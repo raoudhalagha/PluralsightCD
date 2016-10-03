@@ -10,6 +10,7 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution 
 		LoadtestSettings.testsettings = LoadtestSettings.testsettings
 		Provisioning\Params.json = Provisioning\Params.json
 		Provisioning\WebApps\SetSlotTrafic.ps1 = Provisioning\WebApps\SetSlotTrafic.ps1
+		Provisioning\WebApps\VipSwap.ps1 = Provisioning\WebApps\VipSwap.ps1
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcMusicStore", "MvcMusicStore\MvcMusicStore.csproj", "{32DCD27D-A84C-4250-B657-408B3620A9AC}"
