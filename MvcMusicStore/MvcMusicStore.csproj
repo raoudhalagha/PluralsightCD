@@ -106,6 +106,10 @@
       <HintPath>..\packages\Microsoft.ApplicationInsights.2.1.0\lib\net45\Microsoft.ApplicationInsights.dll</HintPath>
       <Private>True</Private>
     </Reference>
+    <Reference Include="Microsoft.ApplicationInsights.AggregateMetrics, Version=2.0.0.24646, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.ApplicationInsights.AggregateMetrics.2.0.0-build24646\lib\net45\Microsoft.ApplicationInsights.AggregateMetrics.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.ApplicationInsights.TraceListener, Version=2.1.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.ApplicationInsights.TraceListener.2.1.0\lib\net45\Microsoft.ApplicationInsights.TraceListener.dll</HintPath>
       <Private>True</Private>
@@ -310,6 +314,7 @@
     <Content Include="Content\Site.css" />
     <Content Include="packages.config" />
     <Content Include="ApplicationInsights.config" />
+    <Content Include="nuget.config" />
     <None Include="Properties\PublishProfiles\Devintersection.pubxml" />
     <None Include="Properties\PublishProfiles\DevintersectionDemo.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
