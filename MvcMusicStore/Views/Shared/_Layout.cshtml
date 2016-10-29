@@ -10,8 +10,18 @@
 </head>
 <body>
     <div id="header">
-        <h1><a href="/">ASP.NET MVC MUSIC STORE-With gitflow in action</a></h1>
-        
+        @{
+            var toggle = new MvcMusicStore.Toggles.HomePageFeatureToggleUI();
+            if (toggle.FeatureEnabled)
+            {
+                <h1><a href="/">Welcome from <b>@ViewBag.CustomerCountry</b> to the ASP.NET MVC MUSIC STORE!</a></h1>
+            }
+            else
+            {
+                <h1><a href="/">ASP.NET MVC MUSIC STORE</a></h1>
+            }
+        }
+
      
         <ul id="navlist">
             <li class="first"><a href="@Url.Content("~")" id="current">Home</a></li>
