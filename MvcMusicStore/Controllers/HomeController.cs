@@ -6,8 +6,8 @@ using System.Threading.Tasks;
 using System.Net.Http;
 using Newtonsoft.Json;
 using System;
-using MvcMusicStore.Featuretoggles;
 using Microsoft.ApplicationInsights;
+using MvcMusicStore.Toggles;
 
 namespace MvcMusicStore.Controllers
 {
@@ -22,7 +22,7 @@ namespace MvcMusicStore.Controllers
         {
             // Get most popular albums
             var albums = GetTopSellingAlbums(5);
-            if (new HomePagefeatureToggle().FeatureEnabled)
+            if (new HomePageFeatureToggle().FeatureEnabled)
             {
                 var customerCountry = GetCountryFromClient(Request.UserHostAddress);
                 ViewBag.CustomerCountry = customerCountry;
