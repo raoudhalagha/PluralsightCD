@@ -10,14 +10,14 @@ namespace MsTest.Tests
         [TestMethod]
         public void MSTestFeatureToggleIsOn()
         {
-            //HomePagefeatureToggle.Current.TurnOn();
-            //Assert.IsTrue(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOn();
+            Assert.IsTrue(HomePagefeatureToggle.Current.FeatureEnabled);
         }
         [TestMethod]
         public void MSTestFeatureToggleIsOff()
         {
-            //HomePagefeatureToggle.Current.TurnOff();
-            //Assert.IsFalse(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOff();
+            Assert.IsFalse(HomePagefeatureToggle.Current.FeatureEnabled);
         }
     }
 }

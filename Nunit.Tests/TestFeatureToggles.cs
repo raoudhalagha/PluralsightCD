@@ -9,14 +9,14 @@ namespace Nunit.Tests
         [Test]
         public void NunitTestFeatureToggleIsOn()
         {
-            //HomePagefeatureToggle.Current.TurnOn();
-            //Assert.True(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOn();
+            Assert.True(HomePagefeatureToggle.Current.FeatureEnabled);
         }
         [Test]
         public void NunitTestFeatureToggleIsOff()
         {
-            //HomePagefeatureToggle.Current.TurnOff();
-            //Assert.False(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOff();
+            Assert.False(HomePagefeatureToggle.Current.FeatureEnabled);
         }
     }
 }
