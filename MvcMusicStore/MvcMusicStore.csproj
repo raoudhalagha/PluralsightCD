@@ -246,8 +246,8 @@
     <Compile Include="Models\ShoppingCart.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Controllers\TestInProduction.cs" />
-    <Compile Include="Toggles\HomePageFeatureToggle.cs" />
-    <Compile Include="Toggles\HomePagefeatureToggleUI.cs" />
+    <Compile Include="FeaturetoggleSwitches\HomePageFeatureToggle.cs" />
+    <Compile Include="FeaturetoggleSwitches\HomePagefeatureToggleUI.cs" />
     <Compile Include="ViewModels\ShoppingCartRemoveViewModel.cs" />
     <Compile Include="ViewModels\ShoppingCartViewModel.cs" />
   </ItemGroup>
