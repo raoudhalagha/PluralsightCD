@@ -7,7 +7,7 @@ using System.Net.Http;
 using Newtonsoft.Json;
 using System;
 using Microsoft.ApplicationInsights;
-using MvcMusicStore.Featuretoggles;
+//using MvcMusicStore.Featuretoggles;
 
 namespace MvcMusicStore.Controllers
 {
@@ -22,11 +22,11 @@ namespace MvcMusicStore.Controllers
         {
             // Get most popular albums
             var albums = GetTopSellingAlbums(5);
-            if (new HomePagefeatureToggle().FeatureEnabled)
-            {
-                var customerCountry = GetCountryFromClient(Request.UserHostAddress);
-                ViewBag.CustomerCountry = customerCountry;
-            }
+            //if (new HomePagefeatureToggle().FeatureEnabled)
+            //{
+            //    var customerCountry = GetCountryFromClient(Request.UserHostAddress);
+            //    ViewBag.CustomerCountry = customerCountry;
+            //}
 
             return View(albums);
         }
