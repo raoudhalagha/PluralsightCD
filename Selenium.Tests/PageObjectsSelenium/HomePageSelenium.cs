@@ -24,6 +24,18 @@ namespace UITests
             return new ProductDetailSelenium(driver);
         }
 
+        internal LoginSelenium ClickAdmin()
+        {
+            var adminLink = FindAdminLink();
+            adminLink.Click();
+            return new LoginSelenium(driver);
+        }
+
+        private IWebElement FindAdminLink()
+        {
+            return driver.FindElement(By.LinkText("Admin"));
+        }
+
         private IWebElement FindHyperlinkForFirstProduct(IWebElement productList)
         {
             var productHyperlinks = productList.FindElements(By.TagName("a"));

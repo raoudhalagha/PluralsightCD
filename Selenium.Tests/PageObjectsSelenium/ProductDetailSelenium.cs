@@ -24,6 +24,7 @@ namespace UITests
         internal ShoppingCartSelenium AddToChart()
         {
             FindHyperlink().Click();
+            
             return new ShoppingCartSelenium(driver);
         }
     }

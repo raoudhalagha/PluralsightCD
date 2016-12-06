@@ -30,7 +30,7 @@ body
 {
 	font-size: 18px;
 	float: left;
-	background: url(http://i.imgur.com/3eFuANg.png) no-repeat;
+	background: url('Images/logo.png') no-repeat;
 	padding: 45px 0px 5px 0px;
 }
 
@@ -38,7 +38,7 @@ body
 {
 	height: 300px; 
 	width: 700px; 
-	background: url(http://i.imgur.com/K0p8GyA.png) no-repeat;
+	background: url('Images/home-showcase.png') no-repeat;
 }
 
 ul li a

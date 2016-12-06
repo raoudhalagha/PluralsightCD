@@ -9,7 +9,7 @@ using MvcMusicStore.Models;
 
 namespace MvcMusicStore.Featuretoggles
 {
-    public class HomePagefeatureToggleUI : SqlFeatureToggle
+    public class HomePagefeatureToggleUI : FeatureToggle.Core.AlwaysOnFeatureToggle //SqlFeatureToggle
     {
         private static HomePagefeatureToggleUI _current;
         private static string _id = "";

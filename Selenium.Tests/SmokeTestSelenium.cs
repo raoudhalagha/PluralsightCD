@@ -1,6 +1,9 @@
 ﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium.IE;
 using OpenQA.Selenium;
+using OpenQA.Selenium.Chrome;
+using OpenQA.Selenium.Firefox;
+using Selenium.Tests.PageObjectsSelenium.Users;
 
 namespace UITests
 {
@@ -8,31 +11,50 @@ namespace UITests
     /// Summary description for CodedUITest1
     /// </summary>
     [TestClass]
+    [DeploymentItem("IEDriverServer.exe")]
+    [DeploymentItem("ChromeDriver.exe")]
+    [DeploymentItem("MicrosoftWebDriver.exe")]
     public class SmokeTestSelenium
     {
         const string _homePageUrl = "http://localhost:26641/";
+        IWebDriver driver;
+
         public SmokeTestSelenium()
         {
+        }
+
+        [TestInitialize]
+        public void Initialize()
+        {
+            driver = new FirefoxDriver();
+            driver.Url = _homePageUrl;
+            driver.Navigate();
+        }
+        [TestCleanup]
+        public void CleanUp()
+        {
+            driver.Quit();
         }
 
         [TestMethod]
         public void HomepageContainsProductsSelenium()
         {
-            IWebDriver driver = new InternetExplorerDriver();
-            driver.Url = _homePageUrl;
-            driver.Navigate();
             var home = new HomePageSelenium(driver);
+
+
+            var lastPge = home.
+                ClickAdmin().
+                Login(new Marcel());
+
+            Assert.IsTrue(lastPge.IsLoggedIn(), "Expected to be logged in");
             Assert.IsTrue( home.PageHasProductsListed(),"Expected to have products on the home page and they are not found");
 
-            driver.Quit();
         }
 
         [TestMethod]
+
         public void CanAddProductToShoppingBasketAndCheckOutSelenium()
         {
-            IWebDriver driver = new InternetExplorerDriver();
-            driver.Url = _homePageUrl;
-            driver.Navigate();
             var home = new HomePageSelenium(driver);
             
             Assert.IsTrue(
@@ -40,7 +62,7 @@ namespace UITests
                 .AddToChart()
                 .Checkout()
                 .IsCheckoutPageValid(),"Expected checkout page would be valid after adding one item to the basket and click checkout");
-            driver.Quit();
+
         }
 
         #region Additional test attributes

@@ -58,14 +58,27 @@
   </Choose>
   <ItemGroup>
     <Compile Include="PageObjectsSelenium\HomePageSelenium.cs" />
+    <Compile Include="PageObjectsSelenium\IUser.cs" />
     <Compile Include="PageObjectsSelenium\LoginSelenium.cs" />
     <Compile Include="PageObjectsSelenium\ProductDetailSelenium.cs" />
     <Compile Include="PageObjectsSelenium\ShoppingCartSelenium.cs" />
+    <Compile Include="PageObjectsSelenium\Users\Marcel.cs" />
     <Compile Include="SmokeTestSelenium.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="IEDriverServer.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="MicrosoftWebDriver.exe">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">

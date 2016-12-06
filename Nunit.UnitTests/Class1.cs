@@ -1,4 +1,4 @@
-﻿using MvcMusicStore.Toggles;
+﻿using MvcMusicStore.Featuretoggles;
 using NUnit.Framework;
 using System;
 using System.Collections.Generic;
@@ -14,14 +14,14 @@ namespace Nunit.UnitTests
         [Test]
         public void NUnitTestfeaturetoggleEnabled()
         {
-            //HomePagefeatureToggle.Current.TurnOn();
-            //Assert.IsTrue(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOn();
+            Assert.IsTrue(HomePagefeatureToggle.Current.FeatureEnabled);
         }
         [Test]
         public void NUnitTestfeaturetoggleDisabled()
         {
-            //HomePagefeatureToggle.Current.TurnOff();
-            //Assert.IsFalse(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOff();
+            Assert.IsFalse(HomePagefeatureToggle.Current.FeatureEnabled);
         }
     }
 }

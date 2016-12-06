@@ -18,7 +18,7 @@ namespace UITests
     [CodedUITest]
     public class SmokeTest
     {
-        const string _homePageUrl = "http://52.174.156.60/mvcmusicstore_deploy/";
+        const string _homePageUrl = "http://localhost:26641/";
         public SmokeTest()
         {
         }
@@ -37,6 +37,7 @@ namespace UITests
         {
 
             Playback.PlaybackSettings.WaitForReadyLevel = WaitForReadyLevel.Disabled;
+            BrowserWindow.CurrentBrowser = "Firefox";
             var bw = BrowserWindow.Launch(_homePageUrl);
             var home = new HomePage(bw);
             Assert.IsTrue(

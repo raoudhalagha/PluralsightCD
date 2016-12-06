@@ -1,6 +1,6 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using MvcMusicStore.Toggles;
+using MvcMusicStore.Featuretoggles;
 
 namespace MsTest.UnitTests
 {
@@ -10,14 +10,14 @@ namespace MsTest.UnitTests
         [TestMethod]
         public void TestfeaturetoggleEnabled()
         {
-            //HomePagefeatureToggle.Current.TurnOn();
-            //Assert.IsTrue(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOn();
+            Assert.IsTrue(HomePagefeatureToggle.Current.FeatureEnabled);
         }
         [TestMethod]
         public void TestfeaturetoggleDisabled()
         {
-            //HomePagefeatureToggle.Current.TurnOff();
-            //Assert.IsFalse(HomePagefeatureToggle.Current.FeatureEnabled);
+            HomePagefeatureToggle.Current.TurnOff();
+            Assert.IsFalse(HomePagefeatureToggle.Current.FeatureEnabled);
         }
     }
 }

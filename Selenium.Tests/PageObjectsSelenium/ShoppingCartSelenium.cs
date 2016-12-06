@@ -16,7 +16,7 @@ namespace UITests
 
         private IWebElement FindHyperlink()
         {
-
+    
             return driver.FindElement(By.LinkText("Checkout >>"));
 
         }
