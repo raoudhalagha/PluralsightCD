@@ -1,1 +1,1 @@
-musicStore
+This repo contains the code used in the demos of the pluralsight course "Building a Continuous Delivery Pipeline with TFS and Visual Studio 2015" that can be found here: https://app.pluralsight.com/library/courses/tfs-visual-studio-2015-implementing-continuous-delivery
